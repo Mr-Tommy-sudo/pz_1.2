@@ -1,66 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 a{
     text-decoration: none;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #7cc02a;
 }
 
 .header__logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .nav__list {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-.nav__item:hover{
-     color: #2c5530;
-     padding: 5px 10px;
-     border-radius: 7px;
-     background-color: cadetblue;
-}
-
-.nav__link{
-    color: #2c5530;
-}
-
-.nav__link:hover{
-    color: #020202;
-}
-
-.nav__link:active{
-    color: #ed0e0e;
-}
-.nav__item--active .nav__link {
-  color: #2c5530;
-  border-bottom: 2px solid #2c5530;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
 }
 
 .card {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .card--featured {
-  background: #f8f9fa;
-  border-color: #2c5530;
+    background: #f8f9fa;
+    border-color: #2c5530;
 }
 
 .cards{
     width: 300px;
+    margin: 24px;
 }
 
-.card__button:{
-    color:  #1b94b9;
+.card__button{
+    color: #1b94b9;
     background-color: aliceblue;
     border-radius: 15px;
     padding: 4px 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.card__button:hover{
+    color: #f40a0a;
+    background-color: aliceblue;
+    border: 1px solid #020202;
+    border-radius: 15px;
+    padding: 4px 12px;
+}
+
+.card__button:active{
+    color: #5de82b;
+    background-color: aliceblue;
+    border: 1px solid #1c3470;
+    border-radius: 15px;
+    padding: 4px 12px;
+}
+
+.card__title{
+    margin: 16px 0px;
 }
